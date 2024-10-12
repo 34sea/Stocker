@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "561938977434",
+    "project_id": "stocker-581b6",
+    "storage_bucket": "stocker-581b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561938977434:android:04e2e9456b43868f8a8523",
+        "android_client_info": {
+          "package_name": "com.example.stocker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561938977434-ubm64h667qh795c9mgoqnghlkjemsd1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFn7yh392mag7iXfUitCxrIQtIjBxd-9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561938977434-ubm64h667qh795c9mgoqnghlkjemsd1p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Stocker</string>
+    <string name="titulo_from_cadastro">Cadastre-se</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_senha">Senha</string>
+    <string name="texto_botao_cadastrar">Cadastrar</string>
+    <string name="texto_botao_login">Login</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Stocker"
+        tools:targetApi="31">
+        <activity
+            android:name=".views.Entrar.Crud.ApagarPromo"
+            android:exported="false" />
+        <activity
+            android:name=".views.Entrar.Crud.atualizarPromo"
+            android:exported="false" />
+        <activity
+            android:name=".views.Entrar.Estatistica.detalhesVenda"
+            android:exported="false" />
+        <activity
+            android:name=".views.Entrar.Estatistica.detalhesPromo"
+            android:exported="false" />
+        <activity
+            android:name=".views.Entrar.Clientes.Promoccao"
+            android:exported="false" />
+        <activity
+            android:name=".views.Entrar.Clientes.ClientePage"
+            android:exported="false" />
+        <activity
+            android:name=".views.Entrar.Cadastrar.CadastroAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".views.Entrar.PerfilAdmin.perfilAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".views.Entrar.Clientes.clienteListar"
+            android:exported="false" />
+        <activity
+            android:name=".views.Entrar.Estatistica.Estatistica"
+            android:exported="false" />
+        <activity
+            android:name=".views.Entrar.Crud.AdcionarPromocoes"
+            android:exported="false" />
+        <activity
+            android:name=".views.Entrar.Crud.AtualizarProdutos"
+            android:exported="false" />
+        <activity
+            android:name=".views.Entrar.Crud.ListarProdutos"
+            android:exported="false" />
+        <activity
+            android:name=".views.Entrar.Crud.ApagarProdutos"
+            android:exported="false" />
+        <activity
+            android:name=".views.Entrar.Crud.AdicionarProduto"
+            android:exported="false" />
+        <activity
+            android:name=".views.Entrar.Home.HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".views.Entrar.Cadastrar.Cadastro"
+            android:exported="false" />
+        <activity
+            android:name=".views.Entrar.Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

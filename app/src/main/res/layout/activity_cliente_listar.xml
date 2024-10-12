@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_gravity="start"
+    android:background="@color/midnightblue"
+    tools:context=".views.Entrar.Clientes.clienteListar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/midnightblue"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:layout_margin="0dp"
+        >
+        <TextView
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sistema de Gestão"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/white"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:gravity="center"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/baseline_arrow_back_24"
+            android:drawableEnd="@drawable/baseline_power_settings_new_24"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onBackButtonClick" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/midnightblue">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bem vindo(a) de volta!!!"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="20dp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:gravity="start"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lista dos cliente"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="20dp"
+
+                />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Nome"
+                android:textColor="@color/white"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Apelido"
+                android:textColor="@color/white"
+                android:layout_marginStart="110dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Idade"
+                android:textColor="@color/white"
+                android:layout_marginStart="260dp"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            >
+            <TextView
+                android:id="@+id/resultadoNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Nome"
+                />
+
+            <TextView
+                android:id="@+id/resultadoApelido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Apelido"
+                android:layout_marginStart="100dp"
+                />
+
+            <TextView
+                android:id="@+id/resultadoIdade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Idade"
+                android:layout_marginStart="250dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:background="@color/gray"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            >
+            <TextView
+                android:id="@+id/cada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="0"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="/"
+                android:layout_marginStart="15dp"
+                />
+
+            <TextView
+                android:id="@+id/todos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="0"
+                android:layout_marginStart="25dp"
+
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="start"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="90dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            >
+            <ImageButton
+                android:id="@+id/btnPrev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+                android:padding="15dp"
+                android:contentDescription="Icon 2"
+                android:onClick="onButton1ClickFavoritos" />
+
+            <ImageButton
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_arrow_forward_24"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+                android:padding="15dp"
+                android:contentDescription="Icon 2"
+                android:onClick="onButton1ClickVendas" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnNovoCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/saf"
+            android:padding="15dp"
+            android:text="Novo Usuário"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/baseline_arrow_back_24"
+            android:layout_margin="20dp"
+            />
+        <LinearLayout
+            android:id="@+id/bottomMenu3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:elevation="8dp">
+
+
+            <ImageButton
+                android:id="@+id/casaPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_home_24"
+                android:background="?android:attr/selectableItemBackground"
+                android:scaleType="fitCenter"
+                android:padding="16dp"
+                android:contentDescription="Icon 1"
+                android:onClick="onButton1ClickHome" />
+
+            <ImageButton
+                android:id="@+id/produtosLista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_folder_24"
+                android:background="?android:attr/selectableItemBackground"
+                android:scaleType="fitCenter"
+                android:padding="16dp"
+                android:contentDescription="Icon 2"
+                android:onClick="onButton1ClickFavoritos" />
+
+
+
+            <ImageButton
+                android:id="@+id/estatisticaList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_pie_chart_24"
+                android:background="?android:attr/selectableItemBackground"
+                android:scaleType="fitCenter"
+                android:padding="16dp"
+                android:contentDescription="Icon 2"
+                android:onClick="onButton1ClickVendas" />
+
+            <ImageButton
+                android:id="@+id/clienteList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_people_alt_24"
+                android:background="@color/saf"
+                android:scaleType="fitCenter"
+                android:padding="16dp"
+                android:contentDescription="Icon 2"
+                android:onClick="onButton1ClickEstatisicas" />
+
+            <ImageButton
+                android:id="@+id/perfilListar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_person_2_24"
+                android:background="?android:attr/selectableItemBackground"
+                android:scaleType="fitCenter"
+                android:padding="16dp"
+                android:contentDescription="Icon 2"
+                android:onClick="onButton1ClickPerfil" />
+
+            <!-- Adicione mais ImageButton para os outros ícones -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

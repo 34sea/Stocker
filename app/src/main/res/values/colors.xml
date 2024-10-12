@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="midnightblue">#2980b9</color>
+    <color name="alizarin">#ef323d</color>
+    <color name="red">#ff0000</color>
+    <color name="gray">#f8f8f8</color>
+    <color name="p">#555555</color>
+    <color name="saf">#f9af23</color>
+    <color name="cinza">#cccccc</color>
+    <color name="cor_pm">#0d1918</color>
+</resources>
